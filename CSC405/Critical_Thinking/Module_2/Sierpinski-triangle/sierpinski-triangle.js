@@ -2,7 +2,7 @@ var InitDemo = function (){
   console.log('This is working');
 
   var canvas = document.getElementById("my_canvas");
-  var gl = canvas.getContext("webgl");
+  var gl = canvas.getContext('experimental-webgl');
 
   // Set the Canvas
   gl.clearColor(0.57, 0.99, 1.77, 0.9);
