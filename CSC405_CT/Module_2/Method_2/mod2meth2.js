@@ -192,17 +192,17 @@ function sierpinski(a, b, c) {
 
   /* Draw the initial triangle */
 
-  // Clear the canvas
-  gl.clearColor(0.0, 0.0, 0.0, 0.1);
+//   // Clear the canvas
+//   gl.clearColor(0.0, 0.0, 0.0, 0.1);
 
-  // Enable the depth test
-  gl.enable(gl.DEPTH_TEST);
+//   // Enable the depth test
+//   gl.enable(gl.DEPTH_TEST);
 
-  // Clear the color buffer bit
-  gl.clear(gl.COLOR_BUFFER_BIT);
+//   // Clear the color buffer bit
+//   gl.clear(gl.COLOR_BUFFER_BIT);
 
-  // Set the view port
-  gl.viewport(0, 0, canvas.width, canvas.height);
+//   // Set the view port
+//   gl.viewport(0, 0, canvas.width, canvas.height);
 
   // Draw the triangle
   gl.drawArrays(gl.TRIANGLES, 0, 3);
