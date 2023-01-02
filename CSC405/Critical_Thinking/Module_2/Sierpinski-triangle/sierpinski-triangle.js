@@ -51,7 +51,7 @@ var InitDemo = function (){
     }
   }
 
-  sierpinski([-0.75, -0.75], [0.0, 0.75], [0.75, -0.75], 3);
+  sierpinski([-0.75, -0.75], [0.0, 0.75], [0.75, -0.75], 5);
 
   for(var i = 0; i < triangleVertices.length; i+= 3){
     var vertices = [];
