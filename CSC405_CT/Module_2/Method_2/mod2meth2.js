@@ -205,7 +205,7 @@ function sierpinski(a, b, c) {
   gl.viewport(0, 0, canvas.width, canvas.height);
 
   // Draw the triangle
-  gl.drawArrays(gl.TRIANGLES, 0, 3);
+  gl.drawArrays(gl.TRIANGLES, 0, 6);
 
   }
   // Call sierpinski function for first (test) sub-triangle
