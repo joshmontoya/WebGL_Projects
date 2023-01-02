@@ -304,6 +304,6 @@ function sierpinski(a, b, c) {
 
   }
   // Call sierpinski function for first (test) sub-triangle
-  sierpinski(vec2(vertices[0], vertices[1]), vec2(vertices[2], vertices[3]), vec2(vertices[4], vertices[5]));
+//   sierpinski(vec2(vertices[0], vertices[1]), vec2(vertices[2], vertices[3]), vec2(vertices[4], vertices[5]));
 
 
