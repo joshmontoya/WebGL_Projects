@@ -1,6 +1,7 @@
 var InitDemo = function (){
+  console.log('This is working');
 
-  var canvas = document.getElementById("surface");
+  var canvas = document.getElementById("gl-canvas");
   var gl = canvas.getContext("webgl");
 
   // Set the Canvas
@@ -50,6 +51,8 @@ var InitDemo = function (){
       sierpinski(ac, bc, c, count);
     }
   }
+
+  sierpinski([-0.75, -0.75], [0.0, 0.75], [0.75, -0.75], 5);
 
   for(var i = 0; i < triangleVertices.length; i+= 3){
     var vertices = [];
@@ -128,8 +131,5 @@ var InitDemo = function (){
 
     // Draw the triangle
     gl.drawArrays(gl.TRIANGLES, 0, 3);
-  };
-
-  sierpinski([-0.75, -0.75], [0.0, 0.75], [0.75, -0.75], 5);
-  
-  };
+  }
+}
