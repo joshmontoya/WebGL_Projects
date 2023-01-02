@@ -5,7 +5,11 @@ var gl = canvas.getContext('experimental-webgl');
 
 /* Define initial triangle geometry and store it in buffer objects */
 
-var vertices = [-0.5, -0.5, 0.0, 0.5, 0.5, -0.5];
+var a = vec2(-0.5, -0.5);
+var b = vec2(0.0, 0.5);
+var c = vec2(0.5, -0.5);
+
+var vertices = [a[0], a[1], b[0], b[1], c[0], c[1]];
 
 // Create a new buffer object
 var vertex_buffer = gl.createBuffer();
