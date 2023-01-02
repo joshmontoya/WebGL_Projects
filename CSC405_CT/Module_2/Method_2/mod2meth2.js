@@ -9,13 +9,13 @@ var a = vec2(-0.5, -0.5);
 var b = vec2(0.0, 0.5);
 var c = vec2(0.5, -0.5);
 
-// var vertices = [a[0], a[1], b[0], b[1], c[0], c[1]];
+var vertices = [a[0], a[1], b[0], b[1], c[0], c[1]];
 
 var ab = mix(a, b, 0.5);
 var bc = mix(b, c, 0.5);
 var ac = mix(a, c, 0.5);
 
-var vertices = [a[0], a[1], ab[0], ab[1], ac[0], ac[1]];
+// var vertices = [a[0], a[1], ab[0], ab[1], ac[0], ac[1]];
 
 // Create a new buffer object
 var vertex_buffer = gl.createBuffer();
