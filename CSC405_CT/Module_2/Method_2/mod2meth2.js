@@ -109,7 +109,7 @@ gl.drawArrays(gl.TRIANGLES, 0, 3);
 
 function sierpinski(a, b, c) {
   // Add passed vertices into triangleVertices array for storage
-  triangle(a, b, c);
+//   triangle(a, b, c);
 
   // Compute midpoints of each side
   var ab = mix(a, b, 0.5);
@@ -118,8 +118,8 @@ function sierpinski(a, b, c) {
 
   // Add veritices of newly formed triangles based on midpoints into triangleVertices array
   triangle(a, ab, ac);
-  triangle(ab, b, bc);
-  triangle(ac, bc, c);
+//   triangle(ab, b, bc);
+//   triangle(ac, bc, c);
 
   // Create a new buffer object
   var vertex_buffer = gl.createBuffer();
@@ -205,10 +205,10 @@ function sierpinski(a, b, c) {
   gl.viewport(0, 0, canvas.width, canvas.height);
 
   // Draw the triangle
-  gl.drawArrays(gl.TRIANGLES, 0, 6);
+  gl.drawArrays(gl.TRIANGLES, 0, 3);
 
   }
   // Call sierpinski function for first (test) sub-triangle
-//   sierpinski(vec2(vertices[0], vertices[1]), vec2(vertices[2], vertices[3]), vec2(vertices[4], vertices[5]));
+  sierpinski(vec2(vertices[0], vertices[1]), vec2(vertices[2], vertices[3]), vec2(vertices[4], vertices[5]));
 
 
