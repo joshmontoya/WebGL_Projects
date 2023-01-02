@@ -178,11 +178,11 @@ gl.drawArrays(gl.TRIANGLES, 0, 3);
 
   /* Draw the initial triangle */
 
-  // Clear the canvas
-  gl.clearColor(0.0, 0.0, 0.0, 0.1);
+//   // Clear the canvas
+//   gl.clearColor(0.0, 0.0, 0.0, 0.1);
 
-  // Enable the depth test
-  gl.enable(gl.DEPTH_TEST);
+//   // Enable the depth test
+//   gl.enable(gl.DEPTH_TEST);
 
   // Clear the color buffer bit
   gl.clear(gl.COLOR_BUFFER_BIT);
