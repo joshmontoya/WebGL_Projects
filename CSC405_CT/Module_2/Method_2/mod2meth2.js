@@ -208,6 +208,8 @@ function sierpinski(a, b, c) {
 
   // Draw the triangle
   gl.drawArrays(gl.TRIANGLES, 0, 3);
+ 
+  return;
 
   }
   // Call sierpinski function for first (test) sub-triangle
