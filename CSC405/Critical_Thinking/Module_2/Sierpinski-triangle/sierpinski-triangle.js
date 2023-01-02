@@ -1,8 +1,7 @@
 var InitDemo = function (){
-  console.log('This is working');
-
+  // Initialize canvas and WebGL
   var canvas = document.getElementById('my_canvas');
-  var gl = canvas.getContext('experimental-webgl');
+  var gl = canvas.getContext('webgl');
 
   // Set the Canvas
   gl.clearColor(0.57, 0.99, 1.77, 0.9);
@@ -52,7 +51,7 @@ var InitDemo = function (){
     }
   }
 
-  sierpinski([-0.75, -0.75], [0.0, 0.75], [0.75, -0.75], 5);
+  sierpinski([-0.75, -0.75], [0.0, 0.75], [0.75, -0.75], 3);
 
   for(var i = 0; i < triangleVertices.length; i+= 3){
     var vertices = [];
