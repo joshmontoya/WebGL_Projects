@@ -128,7 +128,7 @@ function sierpinski(a, b, c) {
   gl.bindBuffer(gl.ARRAY_BUFFER, vertex_buffer);
 
   // Pass the vertices data to the buffer
-  gl.bufferData(gl.ARRAY_BUFFER, triangleVertices, gl.STATIC_DRAW);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-0.5, -0.5, -0.25, -0.25, 0, -0.25]), gl.STATIC_DRAW);
 
   // Unbind the buffer
   gl.bindBuffer(gl.ARRAY_BUFFER, null);
