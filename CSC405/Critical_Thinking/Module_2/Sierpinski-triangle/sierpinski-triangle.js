@@ -1,7 +1,7 @@
 var InitDemo = function (){
   console.log('This is working');
 
-  var canvas = document.getElementById("my_canvas");
+  var canvas = document.getElementById('my_canvas');
   var gl = canvas.getContext('experimental-webgl');
 
   // Set the Canvas
