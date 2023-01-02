@@ -50,7 +50,8 @@ var InitDemo = function (){
       sierpinski(ac, bc, c, count);
     }
   }
-
+  
+  // Call function to add triangle vertices into array
   sierpinski([-0.75, -0.75], [0.0, 0.75], [0.75, -0.75], 5);
 
   for(var i = 0; i < triangleVertices.length; i+= 3){
